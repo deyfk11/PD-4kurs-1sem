@@ -15,11 +15,7 @@ import {
   Container,
 } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import Vacancy from './components/Search/Vacancy';
-import About from './components/About';
-import Contacts from './components/Contacts';
-import Perspectives from './components/Perspectives';
-import Howtouse from './components/Howtouse';
+import Benefits from './components/Benefits/Benefits';
 import './App.css';
 
 const useStyles = makeStyles({
@@ -46,11 +42,7 @@ const useStyles = makeStyles({
 });
 
 const navLinks = [
-  { title: 'Поиск', path: '/' },
-  { title: 'О нас', path: '/about' },
-  { title: 'Контакты', path: '/contacts' },
-  { title: 'Перспективы', path: '/perspectives' },
-  { title: 'Инструкция', path: '/howtouse' },
+  { title: 'Карьера в Политехе', path: '/benefits' },
 ];
 
 const App = () => {
@@ -80,11 +72,7 @@ const App = () => {
         </AppBar>
 
         <Switch>
-          <Route exact path="/" component={Vacancy} />
-          <Route path="/about" component={About} />
-          <Route exact path="/contacts" component={Contacts} />
-          <Route path="/perspectives" component={Perspectives} />
-          <Route path="/howtouse" component={Howtouse} />
+          <Route exact path="/benefits" component={Benefits} />
         </Switch>
       </div>
     </Router>

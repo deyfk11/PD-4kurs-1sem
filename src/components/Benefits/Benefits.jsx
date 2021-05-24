@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Search = () => (
+const Benefits = () => (
   <div>
     dfdf
   </div>
 );
 
-export default Search;
+export default Benefits;
