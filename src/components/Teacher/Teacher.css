@@ -1,9 +1,15 @@
 .teacher__text{
     width: 500px;
     margin: 0 auto;
+    font-size: 17px;
+}
+.title {
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 .info{
     display: flex;
+    margin-top: 20px;
 }
 .info_left,.info_right{
     display: flex;
@@ -27,6 +33,7 @@
     margin:12px 0 12px 40px;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
+    font-size: 17px;
 }
 .list2a li:hover {
     background: #FFF;

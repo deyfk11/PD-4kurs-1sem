@@ -1,23 +1,29 @@
 import React from 'react';
-import './Offer.css'
-import { Container } from '@material-ui/core';
-import {makeStyles} from "@material-ui/core/styles";
-const useStyles = makeStyles({
-    body: {
-        margin: 0,
-        body: 0,
-    },
-})
+import styled from 'styled-components';
+import { Typography } from '@material-ui/core';
 
-const Offer = () => {
-  const s = useStyles();
-  return(
-    <div>
-      <Container>
-      <a href="https://new.mospolytech.ru/ob-universitete/strategiya/">Сделать как ссылку на сайт</a>
-      </Container>
-    </div>
-)};
+const Title = styled(Typography)`
+    font-size: 20px;
+`;
+const Wrapper = styled.div`
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 15px;
+`;
 
+const Link = styled.a`
+    font-size: 15px;
+    margin-top: 15px;
+    color: blue;
+`;
+
+const Offer = () => (
+  <Wrapper>
+    <Title>Ценностное предложение</Title>
+    <Link href="https://new.mospolytech.ru/ob-universitete/strategiya/">
+      https://new.mospolytech.ru/ob-universitete/strategiya/
+    </Link>
+  </Wrapper>
+);
 
 export default Offer;

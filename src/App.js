@@ -17,8 +17,8 @@ import {
 import { makeStyles } from '@material-ui/core/styles';
 import Benefits from './components/Benefits/Benefits';
 import Teacher from './components/Teacher/Teacher';
-import Offer from './components/Offer/Offer'
-import Success from './components/Success/Success'
+import Offer from './components/Offer/Offer';
+import Success from './components/Success/Success';
 import Contacts from './components/Contacts/Contacts';
 import Navigation from './components/Navigation/Navigation';
 import Departments from './components/Departments/Departments';
