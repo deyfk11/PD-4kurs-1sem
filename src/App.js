@@ -16,6 +16,9 @@ import {
 } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import Benefits from './components/Benefits/Benefits';
+import Contacts from './components/Contacts/Contacts';
+import Navigation from './components/Navigation/Navigation';
+import Departments from './components/Departments/Departments';
 import './App.css';
 
 const useStyles = makeStyles({
@@ -43,6 +46,9 @@ const useStyles = makeStyles({
 
 const navLinks = [
   { title: 'Карьера в Политехе', path: '/benefits' },
+  { title: 'Контакты', path: '/contacts' },
+  { title: 'Навигатор', path: '/navigation' },
+  { title: 'Отделы', path: '/departments' },
 ];
 
 const App = () => {
@@ -73,6 +79,10 @@ const App = () => {
 
         <Switch>
           <Route exact path="/benefits" component={Benefits} />
+          <Route exact path="/contacts" component={Contacts} />
+          <Route exact path="/navigation" component={Navigation} />
+          <Route exact path="/departments" component={Departments} />
+
         </Switch>
       </div>
     </Router>
