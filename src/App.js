@@ -17,11 +17,11 @@ import {
 import { makeStyles } from '@material-ui/core/styles';
 import Benefits from './components/Benefits/Benefits';
 import Teacher from './components/Teacher/Teacher';
-import Offer from './components/Offer/Offer';
 import Success from './components/Success/Success';
 import Contacts from './components/Contacts/Contacts';
 import Navigation from './components/Navigation/Navigation';
 import Departments from './components/Departments/Departments';
+import Faculties from './components/Faculties/Faculties';
 import './App.css';
 
 const useStyles = makeStyles({
@@ -44,6 +44,7 @@ const useStyles = makeStyles({
     textDecoration: 'none',
     textTransform: 'uppercase',
     color: 'white',
+    display: 'flex',
   },
 });
 
@@ -53,8 +54,8 @@ const navLinks = [
   { title: 'Навигатор', path: '/navigation' },
   { title: 'Отделы', path: '/departments' },
   { title: 'Преподавательская деятельность', path: '/teacher' },
-  { title: 'Ценностное предложение', path: '/offer' },
   { title: 'Истории успеха', path: '/success' },
+  { title: 'Факультеты', path: '/faculties' },
 
 ];
 
@@ -87,11 +88,11 @@ const App = () => {
         <Switch>
           <Route exact path="/benefits" component={Benefits} />
           <Route exact path="/teacher" component={Teacher} />
-          <Route exact path="/offer" component={Offer} />
           <Route exact path="/success" component={Success} />
           <Route exact path="/contacts" component={Contacts} />
           <Route exact path="/navigation" component={Navigation} />
           <Route exact path="/departments" component={Departments} />
+          <Route exact path="/faculties" component={Faculties} />
         </Switch>
       </div>
     </Router>

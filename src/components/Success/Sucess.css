@@ -1,4 +1,20 @@
 .success_hystory{
     display: flex;
     justify-content: space-between;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+.img {
+    width: 185px;
+    height: 230px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.imgBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title {
+    color: #3f51b5;
 }
