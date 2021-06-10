@@ -67,21 +67,19 @@ const App = () => {
       <div>
         <AppBar position="static">
           <Toolbar>
-            <Container maxWidth="md" className={classes.navbarDisplayFlex}>
-              <List
-                component="nav"
-                aria-labelledby="main navigation"
-                className={classes.navDisplayFlex}
-              >
-                {navLinks.map(({ title, path }) => (
-                  <Link to={path} key={title} className={classes.linkText}>
-                    <ListItem button>
-                      <ListItemText primary={title} />
-                    </ListItem>
-                  </Link>
-                ))}
-              </List>
-            </Container>
+            <List
+              component="nav"
+              aria-labelledby="main navigation"
+              className={classes.navDisplayFlex}
+            >
+              {navLinks.map(({ title, path }) => (
+                <Link to={path} key={title} className={classes.linkText}>
+                  <ListItem button>
+                    <ListItemText primary={title} />
+                  </ListItem>
+                </Link>
+              ))}
+            </List>
           </Toolbar>
         </AppBar>
 
